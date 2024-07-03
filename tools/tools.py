@@ -128,7 +128,9 @@ def banner():
 	print(info_4)
 
 def banner_tools():
-	print(colored("[1]", "red"), colored("Начать спам", "green"))
+	print(colored("[1]", "red"), colored("Начать спам", "green"))
+
+
 	#print(colored("[3]", "red"), colored("Инструкция по отправке логов", "yellow"))
 	#print(colored("[4]", "red"), colored("Попробуй", "green"), colored("в", "yellow"), colored("Telegram", "cyan")+colored("!", "yellow"), colored("   <---", "cyan"))
 	print(colored("\n[99]", "red"), colored("Информация", "cyan"))
@@ -174,7 +176,8 @@ def clear_logs():
 def banner_info():
 	print(colored("\nТелеграм", "cyan"))
 	print("├"+colored("ddekoy", "green")+":", colored("https://t.me/ddekoyYouTube", "cyan"))
-	print("├"+colored("Kraeza", "red")+":", colored("https://t.me/TPAXAU_OMOH", "cyan"))
+	print("├"+colored("Kraeza", "red")+":", colored("https://t.me/TPAXAU_OMOH", "cyan"))
+
 	print("└"+colored("Канал", "cyan")+":", colored("https://t.me/KnlXD", "cyan"))
 	print("\nНажмите Enter чтобы вернуться назад")
 	input()
@@ -589,27 +592,7 @@ def check_files_fn(dir_, files):
 			return False
 	if dir_ != "":
 		os.chdir(last_dir)
-	return True
-
-def check_files():
-	anim_text("Проверка файлов...", speed=0.02, color="green")
-	files = os.listdir()
-	list_ = ["main.py", "LICENSE", "tools"]
-	list_2 = ["proxy.py", "sender.py", "services.json", "tools.py", "version.txt", "logs.txt", "error_logs.txt"]
-	list_3 = ["windows.exe"]
-
-	def ward():
-		clear()
-		print(colored("Наша программа не нашла некоторые наши файлы", "red"))
-		print(colored("Пожалуйста установите программу заново предварительно удалив папку с этой!\n", "green"))
-		exit()
-
-	if not(check_files_fn("", list_)):
-		ward()
-	elif not(check_files_fn("tools", list_2)):
-		ward()
-	elif not(check_files_fn("updaters", list_3)):
-		ward()
+	return True 
 
 def CTF():
 	try:
