@@ -321,13 +321,13 @@ def ICC():
 def app():
 	if platform in ["darwin", "win32"]:
 		print(colored("Открываю ссылку!", "green"))
-		webbrowser.open("https://t.me/orion_cloud_bot", new=0, autoraise=True)
+		webbrowser.open("https://t.me/KnlXD", new=0, autoraise=True)
 		print("\nНажмите Enter чтобы вернуть назад")
 		input()
 	else:
 		print()
-		print(colored(" Попробуй данный Sms Bomber в новом", "yellow"), colored("Android", "green"), colored("приложении", "yellow"), colored("ORION app", "green"))
-		print(colored("\n                 ---> ", "magenta"), colored("@orion_cloud_bot", "cyan"), colored(" <---", "magenta"))
+		print(colored(" Попробуй данный Sms Bomber в новом", "yellow"), colored("Android", "green"), colored("приложении", "yellow"), colored("KnlBomb app", "green"))
+		print(colored("\n                 ---> ", "magenta"), colored("@KnlXD", "cyan"), colored(" <---", "magenta"))
 		print("\n\nНажмите Enter чтобы вернуть назад")
 		input()
 
@@ -527,7 +527,7 @@ def CFU():
 						os.chdir("/data/data/com.termux/files/home/ORION-Bomber")
 						os.system("rm -rf ORION-Bomber-master")
 
-						print(colored("Обновление прошло успешно, запускаю ORION-Bomber...", "green"))
+						print(colored("Обновление прошло успешно, запускаю KnlBomb-Bomber...", "green"))
 						time.sleep(1.5)
 
 						os.system("pip install -r requirements.txt")
@@ -594,7 +594,7 @@ def check_files_fn(dir_, files):
 def check_files():
 	anim_text("Проверка файлов...", speed=0.02, color="green")
 	files = os.listdir()
-	list_ = ["main.py", "LICENSE", "README.md", "tools"]
+	list_ = ["main.py", "LICENSE", "tools"]
 	list_2 = ["proxy.py", "sender.py", "services.json", "tools.py", "version.txt", "logs.txt", "error_logs.txt"]
 	list_3 = ["windows.exe"]
 
